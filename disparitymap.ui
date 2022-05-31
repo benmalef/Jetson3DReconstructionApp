@@ -6,28 +6,77 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>468</width>
-    <height>578</height>
+    <width>455</width>
+    <height>759</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_6">
-   <item row="0" column="0">
-    <spacer name="verticalSpacer_3">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
+   <item row="1" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Video</string>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>411</width>
-       <height>79</height>
-      </size>
-     </property>
-    </spacer>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>72</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>Play Video</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>73</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Stop VIdeo</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>72</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
    </item>
-   <item row="1" column="0">
+   <item row="2" column="0" colspan="2">
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
       <string>Stereo Matching Algorithms</string>
@@ -35,7 +84,7 @@
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0">
+        <item row="0" column="1">
          <widget class="QRadioButton" name="radioButtonStereoBM">
           <property name="text">
            <string>StereoBM</string>
@@ -45,58 +94,288 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="1">
+        <item row="0" column="4">
          <widget class="QRadioButton" name="radioButtonStereoSGBM">
           <property name="text">
            <string>StereoSGBM</string>
           </property>
          </widget>
         </item>
+        <item row="0" column="5">
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="3">
+         <spacer name="horizontalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
        </layout>
       </item>
      </layout>
     </widget>
    </item>
-   <item row="2" column="0">
+   <item row="3" column="0" colspan="2">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
-      <string>GroupBox</string>
+      <string/>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="1">
-         <widget class="QRadioButton" name="radioButtonCuda">
-          <property name="text">
-           <string>CUDA</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
          <widget class="QRadioButton" name="radioButtonCPU">
           <property name="text">
-           <string>CPU</string>
+           <string>CPU                         </string>
           </property>
           <property name="checked">
            <bool>true</bool>
           </property>
          </widget>
         </item>
+        <item row="0" column="3">
+         <widget class="QRadioButton" name="radioButtonCuda">
+          <property name="text">
+           <string>CUDA             </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_13">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_18">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="4">
+         <spacer name="horizontalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
        </layout>
       </item>
      </layout>
     </widget>
    </item>
-   <item row="3" column="0">
-    <layout class="QGridLayout" name="gridLayout_5">
-     <item row="0" column="0">
-      <widget class="QPushButton" name="pushButton">
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Import Images</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButtonImportRightImage">
+        <property name="text">
+         <string>Right</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButtonImportLeftImage">
+        <property name="text">
+         <string>Left </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="4">
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pushButtonStart">
+        <property name="text">
+         <string>Show</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="pushButton3DImage">
+        <property name="text">
+         <string>3D Image</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="3">
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="1" column="0">
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pushButtonExit">
        <property name="text">
-        <string>Save</string>
+        <string>Exit</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
+     <item row="0" column="3">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
       <spacer name="horizontalSpacer">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -109,121 +388,55 @@
        </property>
       </spacer>
      </item>
-    </layout>
-   </item>
-   <item row="4" column="0">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="6" column="0">
-    <spacer name="verticalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="7" column="0">
-    <layout class="QGridLayout" name="gridLayout_3">
-     <item row="0" column="3">
-      <widget class="QPushButton" name="pushButtonExit">
-       <property name="text">
-        <string>Exit</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <spacer name="horizontalSpacer_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="0" column="2">
-      <spacer name="horizontalSpacer_4">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
      <item row="0" column="0">
-      <spacer name="horizontalSpacer_2">
+      <spacer name="verticalSpacer_4">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Vertical</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>40</width>
-         <height>20</height>
+         <width>20</width>
+         <height>40</height>
         </size>
        </property>
       </spacer>
      </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="pushButtonStart">
-       <property name="text">
-        <string>Start</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </item>
-   <item row="8" column="0">
-    <spacer name="verticalSpacer_4">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="5" column="0">
+   <item row="5" column="0" rowspan="2" colspan="2">
     <layout class="QGridLayout" name="gridLayout_4">
-     <item row="11" column="0">
-      <widget class="QLabel" name="label_19">
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>PreFilterSize</string>
+        <string>Disp12Max</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="4">
-      <widget class="QLabel" name="label_34">
+     <item row="2" column="5">
+      <widget class="QLabel" name="label_9">
        <property name="text">
-        <string>63</string>
+        <string/>
        </property>
       </widget>
      </item>
-     <item row="9" column="3">
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_26">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QSlider" name="horizontalSliderspeckleWindowSize">
+       <property name="maximum">
+        <number>300</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3">
       <widget class="QSlider" name="horizontalSliderTextureThreshold">
        <property name="maximum">
         <number>1000</number>
@@ -236,102 +449,49 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="4">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>256</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_25">
-       <property name="text">
-        <string>speckeWindowSize</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="4">
-      <widget class="QLabel" name="label_24">
-       <property name="text">
-        <string>40</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="4">
+     <item row="12" column="4">
       <widget class="QLabel" name="label_35">
        <property name="text">
         <string>255</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="6">
-      <widget class="QLabel" name="labelPreFilterCapValue">
-       <property name="frameShape">
-        <enum>QFrame::Panel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Sunken</enum>
-       </property>
+     <item row="10" column="2">
+      <widget class="QLabel" name="label_27">
        <property name="text">
-        <string>0</string>
+        <string>1</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_23">
+     <item row="14" column="4">
+      <widget class="QLabel" name="label_38">
        <property name="text">
-        <string>-100</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>Disp12Max</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_32">
-       <property name="text">
-        <string>100</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="6">
-      <widget class="QLabel" name="labelNumOfDisparitiesValue">
-       <property name="frameShape">
-        <enum>QFrame::Panel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Sunken</enum>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="3">
-      <widget class="QSlider" name="horizontalSliderUniquessRatio">
-       <property name="minimum">
-        <number>1</number>
-       </property>
-       <property name="maximum">
-        <number>20</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <string>4000</string>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_8">
+      <widget class="QLabel" name="label_7">
        <property name="text">
-        <string>numOfDisparities</string>
+        <string>minDisparity</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="3">
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>textureThreshold</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="3">
       <widget class="QSlider" name="horizontalSliderPreFilterSize">
        <property name="minimum">
         <number>5</number>
@@ -347,88 +507,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="4">
-      <widget class="QLabel" name="label_16">
-       <property name="text">
-        <string>255</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_21">
-       <property name="text">
-        <string>speckleRange</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="4">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="6">
-      <widget class="QLabel" name="labelTextureThresholdValue">
-       <property name="frameShape">
-        <enum>QFrame::Panel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Sunken</enum>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="4">
-      <widget class="QLabel" name="label_28">
-       <property name="text">
-        <string>300</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="6">
-      <widget class="QLabel" name="labelMinDisparityValue">
-       <property name="frameShape">
-        <enum>QFrame::Panel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Sunken</enum>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_10">
-       <property name="text">
-        <string>BlockSize</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="6">
-      <widget class="QLabel" name="labelSpeckleWindowSizeValue">
-       <property name="frameShape">
-        <enum>QFrame::Panel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Sunken</enum>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="2">
-      <widget class="QLabel" name="label_26">
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
+     <item row="1" column="3">
       <widget class="QSlider" name="horizontalSliderMinDisparity">
        <property name="minimum">
         <number>-100</number>
@@ -441,10 +520,24 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="6">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>BlockSize</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>16</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
       <widget class="QLabel" name="labelBlockSizeValue">
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::WinPanel</enum>
        </property>
        <property name="frameShadow">
         <enum>QFrame::Sunken</enum>
@@ -454,31 +547,48 @@
        </property>
       </widget>
      </item>
-     <item row="9" column="2">
-      <widget class="QLabel" name="label_27">
-       <property name="text">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="4">
+     <item row="10" column="4">
       <widget class="QLabel" name="label_33">
        <property name="text">
         <string>1000</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="2">
-      <widget class="QLabel" name="label_30">
-       <property name="text">
-        <string>1</string>
+     <item row="7" column="3">
+      <widget class="QSlider" name="horizontalSliderDisp12Max">
+       <property name="maximum">
+        <number>100000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
-     <item row="4" column="6">
-      <widget class="QLabel" name="labelSpeckleRangeValue">
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_25">
+       <property name="text">
+        <string>speckeWindowSize</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="4">
+      <widget class="QLabel" name="label_34">
+       <property name="text">
+        <string>63</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="4">
+      <widget class="QLabel" name="label_29">
+       <property name="text">
+        <string>20</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="QLabel" name="labelMinDisparityValue">
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::WinPanel</enum>
        </property>
        <property name="frameShadow">
         <enum>QFrame::Sunken</enum>
@@ -488,86 +598,48 @@
        </property>
       </widget>
      </item>
-     <item row="10" column="0">
-      <widget class="QLabel" name="label_15">
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_23">
        <property name="text">
-        <string>preFilterCap</string>
+        <string>-100</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="2">
-      <widget class="QLabel" name="label_31">
-       <property name="text">
-        <string>5</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="2">
-      <widget class="QLabel" name="label_13">
-       <property name="text">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="3">
-      <widget class="QSlider" name="horizontalSliderPreFilterCap">
-       <property name="minimum">
-        <number>1</number>
-       </property>
+     <item row="14" column="3">
+      <widget class="QSlider" name="horizontalSliderP2">
        <property name="maximum">
-        <number>63</number>
+        <number>4000</number>
        </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
-     <item row="6" column="3">
-      <widget class="QSlider" name="horizontalSliderDisp12Max">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="2">
-      <widget class="QLabel" name="label_5">
+     <item row="13" column="2">
+      <widget class="QLabel" name="label_20">
        <property name="text">
         <string>0</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="5">
-      <widget class="QLabel" name="label_9">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="label_11">
-       <property name="text">
-        <string>uniquenessRatio</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
+     <item row="2" column="1">
       <widget class="QLabel" name="label_3">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
-     <item row="2" column="2">
-      <widget class="QLabel" name="label_14">
+     <item row="14" column="2">
+      <widget class="QLabel" name="label_36">
        <property name="text">
-        <string>5</string>
+        <string>0</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="6">
-      <widget class="QLabel" name="labelDisp12MaxValue">
+     <item row="14" column="6">
+      <widget class="QLabel" name="labelP2Value">
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::WinPanel</enum>
        </property>
        <property name="frameShadow">
         <enum>QFrame::Sunken</enum>
@@ -577,21 +649,114 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="2">
-      <widget class="QLabel" name="label_22">
+     <item row="12" column="2">
+      <widget class="QLabel" name="label_31">
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QLabel" name="labelNumOfDisparitiesValue">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
        <property name="text">
         <string>0</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_7">
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_15">
        <property name="text">
-        <string>minDisparity</string>
+        <string>preFilterCap</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="3">
+     <item row="11" column="6">
+      <widget class="QLabel" name="labelPreFilterCapValue">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>256</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="6">
+      <widget class="QLabel" name="labelPreFilterSizeValue">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLabel" name="label_28">
+       <property name="text">
+        <string>300</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="QLabel" name="labelDisp12MaxValue">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="6">
+      <widget class="QLabel" name="labelTextureThresholdValue">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QLabel" name="label_30">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
       <widget class="QSlider" name="horizontalSliderSpeckleRange">
        <property name="maximum">
         <number>40</number>
@@ -601,44 +766,36 @@
        </property>
       </widget>
      </item>
-     <item row="9" column="0">
-      <widget class="QLabel" name="label_12">
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_17">
        <property name="text">
-        <string>textureThreshold</string>
+        <string>P1</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
+     <item row="2" column="3">
       <widget class="QSlider" name="horizontalSliderNumOfDisparities">
        <property name="minimum">
-        <number>5</number>
+        <number>16</number>
        </property>
        <property name="maximum">
         <number>256</number>
+       </property>
+       <property name="singleStep">
+        <number>16</number>
+       </property>
+       <property name="pageStep">
+        <number>16</number>
        </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
-     <item row="7" column="4">
-      <widget class="QLabel" name="label_29">
-       <property name="text">
-        <string>20</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="6">
-      <widget class="QLabel" name="labelPreFilterSizeValue">
+     <item row="6" column="6">
+      <widget class="QLabel" name="labelSpeckleWindowSizeValue">
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::WinPanel</enum>
        </property>
        <property name="frameShadow">
         <enum>QFrame::Sunken</enum>
@@ -648,7 +805,77 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="3">
+     <item row="13" column="3">
+      <widget class="QSlider" name="horizontalSliderP1">
+       <property name="maximum">
+        <number>4000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QSlider" name="horizontalSliderUniquessRatio">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>20</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string>speckleRange</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>numOfDisparities</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="6">
+      <widget class="QLabel" name="labelP1Value">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="4">
+      <widget class="QLabel" name="label_37">
+       <property name="text">
+        <string>4000</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="6">
+      <widget class="QLabel" name="labelUniquenessRatioValue">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
       <widget class="QSlider" name="horizontalSliderBlocjSize">
        <property name="minimum">
         <number>5</number>
@@ -664,10 +891,72 @@
        </property>
       </widget>
      </item>
-     <item row="7" column="6">
-      <widget class="QLabel" name="labelUniquenessRatioValue">
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>P2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>PreFilterSize</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_22">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_32">
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>uniquenessRatio</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>255</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3">
+      <widget class="QSlider" name="horizontalSliderPreFilterCap">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>63</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="QLabel" name="labelSpeckleRangeValue">
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::WinPanel</enum>
        </property>
        <property name="frameShadow">
         <enum>QFrame::Sunken</enum>
@@ -677,15 +966,32 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="3">
-      <widget class="QSlider" name="horizontalSliderspeckleWindowSize">
-       <property name="maximum">
-        <number>300</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>0</string>
        </property>
       </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLabel" name="label_24">
+       <property name="text">
+        <string>40</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
      </item>
     </layout>
    </item>

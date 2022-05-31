@@ -153,6 +153,18 @@ void CalibrationStereoCamera::saveFile() {
   cvFile.write("RoiRightY", RoiRight.y);
   cvFile.write("RoiRightHeight", RoiRight.height);
   cvFile.write("RoiRightWidth", RoiRight.width);
+  cvFile.write("mtxl", mtxL);
+  cvFile.write("mtxR", mtxR);
+  cvFile.write("distL", distL);
+  cvFile.write("distR", distR);
+  cvFile.write("R_L", R_L);
+  cvFile.write("R_R", R_R);
+  cvFile.write("T_L", T_L);
+  cvFile.write("T_R", T_R);
+  cvFile.write("Rot", Rot);
+  cvFile.write("Trns", Trns);
+  cvFile.write("Emat", Emat);
+  cvFile.write("Fmat", Fmat);
 
   cvFile.release();
 }

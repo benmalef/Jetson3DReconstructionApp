@@ -1,7 +1,7 @@
 #ifndef DIALOGDISPARITYMAP_H
 #define DIALOGDISPARITYMAP_H
 
-#include "dialogstereobmcuda.h"
+
 #include <QDialog>
 
 namespace Ui {

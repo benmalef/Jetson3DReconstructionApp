@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(calibrationStereoCamera LANGUAGES CXX)
+project(3DStereoReconstructionApp LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -29,7 +29,7 @@ find_package( OpenCV REQUIRED )
 include_directories(${PROJECT_NAME}  ${OpenCV_INCLUDE_DIRS} )
 
 if(ANDROID)
-  add_library(calibrationStereoCamera SHARED
+  add_library(3DStereoReconstructionApp SHARED
     main.cpp
     dialog.cpp
     dialog.h
@@ -41,7 +41,7 @@ if(ANDROID)
 
   )
 else()
-  add_executable(calibrationStereoCamera
+  add_executable(3DStereoReconstructionApp
     main.cpp
     dialog.cpp
     dialog.h
@@ -49,15 +49,11 @@ else()
     dialogmenu.cpp
     dialogmenu.h
     dialogmenu.ui
-#    dialogstereobm.cpp
-#    dialogstereobm.h
-#    dialogstereobm.ui
+
     dialogcalibration.cpp
     dialogcalibration.h
     dialogcalibration.ui
-#    dialogdisparitymap.cpp
-#    dialogdisparitymap.h
-#   dialogdisparitymap.ui
+
     calibrationpictures.cpp
     calibrationpictures.h
     stereocamera.cpp
@@ -68,15 +64,7 @@ else()
     visualizerstereocamera.cpp
     stereorectification.cpp
     stereorectification.h
-#   dialogstereobmcuda.cpp
-#   dialogstereobmcuda.h
-#   dialogstereobmcuda.ui
-#   dialogsemiglobalblockmatching.cpp
-#   dialogsemiglobalblockmatching.h
-#   dialogsemiglobalblockmatching.ui
-#   dialogsemiglobalblockmatchingcuda.cpp
-#   dialogsemiglobalblockmatchingcuda.h
-#   dialogsemiglobalblockmatchingcuda.ui
+
    dialogremap.cpp
    dialogremap.h
    dialogremap.ui
@@ -90,5 +78,5 @@ else()
   )
 endif()
 
-target_link_libraries(calibrationStereoCamera  Qt5::Widgets)
+target_link_libraries(3DStereoReconstructionApp  Qt5::Widgets)
 target_link_libraries( ${PROJECT_NAME}  ${OpenCV_LIBS} )

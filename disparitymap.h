@@ -6,6 +6,7 @@
 #include "stereorectification.h"
 #include "ui_disparitymap.h"
 #include <QDialog>
+#include <QFileDialog>
 #include <chrono>
 #include <cmath>
 #include <ctime>
@@ -18,8 +19,8 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/imgproc.hpp>
-//#include <opencv2/viz/viz3d.hpp>
-//#include <opencv2/viz/vizcore.hpp>
+#include <opencv2/viz/viz3d.hpp>
+#include <opencv2/viz/vizcore.hpp>
 #include <opencv2/ximgproc/disparity_filter.hpp>
 
 namespace Ui {
@@ -44,54 +45,55 @@ public:
   void computeDisparityMapCuda();
   void showDisparityMapCuda();
   void setStereoBMcudaValues();
+
+  void setStereoSGBMvalues();
+  void filteringDisparityMat();
+  void execDisparityMapImages();
+  Mat resizeImage(const Mat image, int up_width, int up_height);
 private slots:
+  void on_pushButton_2_clicked();
+
+private slots:
+  void on_pushButton3DImage_clicked();
+
+private slots:
+  void on_pushButton_4_clicked();
+
+private slots:
+  void on_pushButtonImportLeftImage_clicked();
+
+private slots:
+  void on_pushButtonImportRightImage_clicked();
+
+private slots:
+  void on_horizontalSliderP2_valueChanged(int value);
+  void on_horizontalSliderP1_valueChanged(int value);
   void on_horizontalSliderPreFilterSize_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderTextureThreshold_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderPreFilterCap_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderMinDisparity_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderUniquessRatio_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderDisp12Max_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderspeckleWindowSize_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderSpeckleRange_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderBlocjSize_valueChanged(int value);
-
-private slots:
   void on_horizontalSliderNumOfDisparities_valueChanged(int value);
-
-private slots:
   void on_pushButton_clicked();
-
-private slots:
   void on_pushButtonExit_clicked();
-
-private slots:
   void on_pushButtonStart_clicked();
 
 private:
   Ui::DisparityMap *ui;
+  StereoRectification stereoRectification;
+
   // CPU
   Ptr<StereoBM> stereoBMcpu;
   Ptr<StereoSGBM> stereoSGBMcpu;
+
   Mat leftFrame;
   Mat rightFrame;
   Mat disparityMap;
-
+  Mat tmpFrame;
   // CUDA
   Ptr<cuda::StereoBM> stereoBMcuda;
   cuda::GpuMat cudaLeftFrame, cudaRightFrame;
@@ -116,6 +118,12 @@ private:
   int mode = 0;
   String userChoice;
   int btnExit = false;
+
+  // filter
+  Ptr<StereoMatcher> right_matcher;
+  Ptr<ximgproc::DisparityWLSFilter> wls_filter;
+  Mat rightDisparityMap;
+  Mat filteredDisparityMap;
 };
 
 #endif // DISPARITYMAP_H

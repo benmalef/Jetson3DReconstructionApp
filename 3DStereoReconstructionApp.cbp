@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="3DStereoReconstructionApp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3DStereoReconstructionApp">
+				<Option output="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/3DStereoReconstructionApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+					<Add directory="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/3DStereoReconstructionApp_autogen/include"/>
+					<Add directory="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/3DStereoReconstructionApp"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 3DStereoReconstructionApp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3DStereoReconstructionApp/fast">
+				<Option output="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/3DStereoReconstructionApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+					<Add directory="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/3DStereoReconstructionApp_autogen/include"/>
+					<Add directory="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/3DStereoReconstructionApp"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 3DStereoReconstructionApp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3DStereoReconstructionApp_autogen">
+				<Option working_dir="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 3DStereoReconstructionApp_autogen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/3DStereoReconstructionApp_autogen/mocs_compilation.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/calibrationpictures.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/calibrationpictures.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/calibrationstereocamera.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/calibrationstereocamera.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialog.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialog.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialog.ui">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogcalibration.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogcalibration.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogcalibration.ui">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogmenu.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogmenu.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogmenu.ui">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogremap.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogremap.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/dialogremap.ui">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/disparitymap.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/disparitymap.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/disparitymap.ui">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/main.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/stereocamera.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/stereocamera.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/stereorectification.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/stereorectification.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/visualizerstereocamera.cpp">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/visualizerstereocamera.h">
+			<Option target="3DStereoReconstructionApp"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

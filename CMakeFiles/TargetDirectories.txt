@@ -1,0 +1,4 @@
+/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/CMakeFiles/edit_cache.dir
+/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/CMakeFiles/rebuild_cache.dir
+/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/CMakeFiles/3DStereoReconstructionApp.dir
+/home/benmalef/Desktop/3DReconstructionApp/3DReconstructionApp/CMakeFiles/3DStereoReconstructionApp_autogen.dir
